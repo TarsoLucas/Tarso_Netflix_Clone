@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+main{
+    background-color: black;
+}
+
+header{
+    top: 0;
+    position: sticky;
+    color: #fff;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 500), rgba(0, 0, 0, 0.850));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+i{
+    color: #fff;
+}
+
+img{
+    height: 30px;
+    width: 30px;
+    object-fit: contain;
+}
+
+.logo{
+    height: 100px;
+    width: 150px;
+}
+
+ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+
+li{
+    margin: 0px 5px 0px;
+}
+
+.featured{
+    background-image: 
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.308) 70%, rgb(0, 0, 0)), url(../images/avatar_background.jpg);
+    height: 600px;
+    object-fit: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+} 
+
+.text{
+    margin-left: 50px;
+    width: 60%;
+    max-width: 500px;
+}
+
+h2{
+    margin-bottom: 5px;
+}
+
+a{
+    color: #fff;
+}
+
+button{
+    border-radius: 5px;
+    margin-top: 30px;
+    background-color: rgba(0, 0, 0, 0.116);
+    color: #fff;
+    border: none;
+    padding: 10px 30px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+a:hover{
+    color: rgba(255, 255, 255, 0.432);
+}
+
+
+button:hover{
+    background-color: #fff;
+    color: black;
+}
+
+i:hover{
+    color: rgba(255, 255, 255, 0.432);
+}
+
+.lowerArea{
+    background-color: black;
+    color: #fff;
+    font-size: 25px;
+}
+
+.item{
+    margin-top: 5px;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+#N{
+    visibility: hidden;
+}
+
+#bars{
+    visibility: hidden;
+}
+
+@media screen and (max-width:760px) {
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width:670px){
+
+    header {
+        background-color: black;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #N{
+        visibility: visible;
+    }
+
+    #bars{
+        visibility: visible;
+    }
+
+    .desktop-icon{
+        display: none;
+    }
+}
